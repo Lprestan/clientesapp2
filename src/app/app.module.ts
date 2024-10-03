@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavegacionComponent } from './navegacion/navegacion.component';
+import { NuevoclienteComponent } from './nuevocliente/nuevocliente.component';
+import { ListadoclientesComponent } from './listadoclientes/listadoclientes.component';
+import { EditarclienteComponent } from './editarcliente/editarcliente.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavegacionComponent,
+    NuevoclienteComponent,
+    ListadoclientesComponent,
+    EditarclienteComponent
   ],
   imports: [
     BrowserModule,
