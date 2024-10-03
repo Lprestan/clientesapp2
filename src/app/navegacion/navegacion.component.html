@@ -1,1 +1,17 @@
-<p>navegacion works!</p>
+<div class="container mt-1" id="navcontainer">
+    <p class="fs-4">Sistema de gestion de Clientes</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 fw-bold" href="#">Clientes App </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active fs-4" href="#" [routerLink]="['/nuevocliente']" routerLinkActive="router-link-active" >Nuevo Cliente</a>
+              <a class="nav-link active fs-4" href="#" [routerLink]="['/listadoclientes']" routerLinkActive="router-link-active" >Listado Clientes</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>

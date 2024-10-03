@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+
+/*fuente para la web desde google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+/*establesco el tipo de fuente para toda la aplicacion*/
+body{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
