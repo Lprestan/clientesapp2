@@ -1,11 +1,11 @@
 {
-    "Clientes":[
-        {
-            "id":1,
-            "idCliente":"72257416",
-            "nombre":"larry prestan",
-            "telefono":"3004488522",
-            "correo":"larry.prestan@gmail.com"
-        }
-    ]
+  "Clientes": [
+    {
+      "id": "1",
+      "idCliente": "72257416",
+      "nombre": "larry prestan",
+      "telefono": "3004488522",
+      "correo": "larry@correo.com"
+    }
+  ]
 }
