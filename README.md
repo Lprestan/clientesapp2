@@ -1,3 +1,14 @@
+Crud de clientes realizado con Angular17 no stanalone, con bootstrap como estilos css y json server como backend.
+se utilizan diferenetes componentes como navegacion(menu de navegacion), nuevo cliente(modulo para agregar un registro),listado de clientes(donde se muestra la informacion de cada registro)
+y las opciones de actualizar o editar y de eliminar cada registro.
+se puede acceder a cada componente utilizando las rutas en Angular. 
+y se utiliza un servicio (clienteservice) para cada una de las diferentes funciones en el crud.
+
+# json server
+
+antes de ciniciar el proyecto se debe iniciar el servicio de json server con el comando
+npx json-server -w db/db.json
+
 # Clientesapp2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
