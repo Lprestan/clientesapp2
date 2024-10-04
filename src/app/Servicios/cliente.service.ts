@@ -15,6 +15,10 @@ export class ClienteService {
     return this.http.get(this.url);
   }
 
+  ObtenerCliente(id:any){
+    return this.http.get(`${this.url}/${id}`);
+  }
+
   /*eliminar un registro*/
   EliminarCliente(id:number){
     return this.http.delete(`${this.url}/${id}`);
@@ -22,6 +26,10 @@ export class ClienteService {
 
   ActualizarCliente(id:number,clienteupdate:any){
     return this.http.put(`${this.url}/${id}`,clienteupdate);
+  }
+
+  AgregarCliente(nuevocliente:any){
+    return this.http.post(this.url,nuevocliente);
   }
 
 }

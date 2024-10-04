@@ -1,1 +1,35 @@
-<p>nuevocliente works!</p>
+<div class="card p-2 mt-3 mx-auto" style="width: 25rem;">
+    <div class="card-header">
+        <h4 class="card-title">Nuevo Cliente</h4>
+    </div>
+    <div class="card-body">
+        <form action="#" #f="ngForm">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="idCliente" id="idCliente" placeholder="idCliente" [(ngModel)]="idCliente" required>
+                <label for="idCliente">Id/Nit:</label>
+            </div>   
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre" [(ngModel)]="nombre" required>
+                <label for="nombre">Nombre:</label>
+            </div>  
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="telefono" [(ngModel)]="telefono" required>
+                <label for="telefono">Telefono:</label>
+            </div>  
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="correo" id="correo" placeholder="correo" [(ngModel)]="correo" required>
+                <label for="correo">Correo:</label>
+            </div> 
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success" type="button" [disabled]="f.invalid" (click)="AgregarCliente()">Agregar Cliente</button>
+            </div>          
+        </form>
+    </div>
+    @if(mostrar){
+        <p class="fs-4">Agregando registro. Espere...</p>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    }
+</div>
+
